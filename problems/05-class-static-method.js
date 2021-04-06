@@ -22,11 +22,11 @@ Node.js with the examples below. Use the command:
 
 Example:
 
-const instance1 = new MMS('555-111-1111', '555-222-2222', 
+const instance1 = new MMS('555-111-1111', '555-222-2222',
   'This is a test message.', 'image/gif');
-const instance2 = new MMS('555-111-1111', '555-222-2222', 
+const instance2 = new MMS('555-111-1111', '555-222-2222',
   'This is a second test message.', 'image/gif');
-const instance3 = new MMS('555-111-1111', '555-222-2222', 
+const instance3 = new MMS('555-111-1111', '555-222-2222',
   'This is a third test message.', 'image/jpeg');
 
 const messages = [instance1, instance2, instance3];
@@ -59,6 +59,10 @@ class MMS {
     this.sender = sender;
     this.text = text;
     this.mimeType = mimeType;
+  }
+
+  static getMessagesByMIMEType(messages, mimeType) {
+    
   }
 }
 

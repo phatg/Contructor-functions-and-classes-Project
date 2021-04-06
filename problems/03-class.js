@@ -3,7 +3,7 @@
 
 Let's create an ES2015 class to represent SMS text messages!
 
-Define an ES2015 class named `SMS` containing a constructor method that 
+Define an ES2015 class named `SMS` containing a constructor method that
 accepts three arguments that initialize the following properties:
 
 * recipient - the recipient of the text message
@@ -41,7 +41,13 @@ console.log(message2);
 
 ***********************************************************************/
 
-
+class SMS {
+  constructor(recipient, sender, text) {
+    this.recipient = recipient;
+    this.sender = sender;
+    this.text = text;
+  }
+}
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS LINE*****************/
 try {
