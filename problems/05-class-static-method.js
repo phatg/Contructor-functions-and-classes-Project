@@ -62,7 +62,13 @@ class MMS {
   }
 
   static getMessagesByMIMEType(messages, mimeType) {
-    
+    let arr = []
+    for (let i = 0; i < messages.length; i++) {
+      if (messages[i].mimeType === mimeType) {
+        arr.push(messages[i])
+      }
+    }
+    return arr;
   }
 }
 
